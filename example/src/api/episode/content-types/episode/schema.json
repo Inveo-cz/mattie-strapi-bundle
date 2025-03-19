@@ -32,10 +32,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["files", "videos"]
     },
     "duration": {
       "type": "time",
@@ -43,10 +40,7 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "FULL",
-        "TRAILER"
-      ],
+      "enum": ["FULL", "TRAILER"],
       "default": "FULL"
     },
     "keywords": {

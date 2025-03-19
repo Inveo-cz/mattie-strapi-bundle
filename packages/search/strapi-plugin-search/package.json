@@ -14,7 +14,7 @@
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.0.0"
+    "@strapi/strapi": "4.25.20"
   },
   "keywords": [
     "strapi",
