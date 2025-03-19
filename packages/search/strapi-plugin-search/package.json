@@ -1,5 +1,5 @@
 {
-  "name": "@richardweaver/strapi-plugin-search",
+  "name": "@inveo.cz/strapi-plugin-search",
   "version": "1.0.0-alpha.3",
   "description": "Index managed content on Strapi to a search service.",
   "strapi": {
@@ -10,7 +10,7 @@
     "kind": "plugin"
   },
   "dependencies": {
-    "@strapi/utils": "^4.0.0",
+    "@strapi/utils": "4.25.20",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
@@ -22,13 +22,13 @@
     "search",
     "service"
   ],
-  "homepage": "https://github.com/richardweaver/mattie-strapi-bundle",
+  "homepage": "https://github.com/inveo-cz/mattie-strapi-bundle",
   "repository": {
     "type": "git",
-    "url": "github:richardweaver/mattie-strapi-bundle",
+    "url": "github:inveo-cz/mattie-strapi-bundle",
     "directory": "packages/search/strapi-plugin-search"
   },
-  "bugs": "https://github.com/richardweaver/mattie-strapi-bundle/issues",
+  "bugs": "https://github.com/inveo-cz/mattie-strapi-bundle/issues",
   "author": {
     "name": "Mattias Belt, van den",
     "email": "mattiebelt@gmail.com",
@@ -37,11 +37,15 @@
   "contributors": [
     {
       "name": "Richard Weaver",
-      "url": "https://github.com/richardweaver"
+      "url": "https://github.com/inveo-cz"
+    },
+    {
+      "name": "Inveo.cz",
+      "url": "https://github.com/inveo-cz"
     }
   ],
   "engines": {
-    "node": ">=12.x.x <=18.x.x",
+    "node": ">=12.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "SEE LICENSE IN LICENSE"

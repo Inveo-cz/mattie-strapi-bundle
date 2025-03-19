@@ -17,7 +17,7 @@ This bundle brings extra easy-to-use features to the Strapi eco-system.
 
 ### Requirements
 
-- Node.js `12.x` - `18.x`
+- Node.js `12.x` - `20.x`
 - NPM `6.x`
 - Yarn `1.x`
 

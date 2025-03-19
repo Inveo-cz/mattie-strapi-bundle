@@ -14,7 +14,7 @@ This fork adds support for a clearing an index. This enables full reindexing sup
 
 ## Other packages ✨
 
-- [Search Plugin](https://github.com/richardweaver/mattie-strapi-bundle)
+- [Search Plugin](https://github.com/inveo-cz/mattie-strapi-bundle)
 
 ## License
 
