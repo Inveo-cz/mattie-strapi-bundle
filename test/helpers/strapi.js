@@ -10,7 +10,7 @@ const APP_PATH = path.resolve(__dirname, '../../example');
  * @returns {strapi} Strapi instance
  */
 const createStrapiInstance = async () => {
-  const instance = strapi({ dir: APP_PATH });
+  const instance = strapi({ appDir: APP_PATH });
 
   await instance.load();
 

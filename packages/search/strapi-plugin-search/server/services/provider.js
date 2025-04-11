@@ -23,7 +23,7 @@ module.exports = () => ({
       // Todo implement v4 package loader logic
       const providerInstance = pluginConfig.instance
         ? pluginConfig.instance
-        : await require(`@mattie-bundle/strapi-provider-search-${pluginConfig.provider}`).init(pluginConfig);
+        : await require(`@inveo.cz/strapi-provider-search-${pluginConfig.provider}`).init(pluginConfig);
 
       if (validateProvider(providerInstance)) {
         PROVIDER_METHODS.forEach((method) => {
