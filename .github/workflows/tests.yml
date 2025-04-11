@@ -41,6 +41,7 @@ jobs:
         run: yarn -s test
         env:
           JWT_SECRET: abc123
+          API_TOKEN_SALT: salt123
           DATABASE: sqlite
           DATABASE_FILE: .tmp/test.db
           DEBUG: true
