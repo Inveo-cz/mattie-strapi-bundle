@@ -12,10 +12,10 @@ module.exports = {
   coveragePathIgnorePatterns: ['build', '.cache', 'admin'],
   coverageThreshold: {
     global: {
-      branches: 70,
-      functions: 90,
-      lines: 80,
-      statements: 80,
+      branches: 80,
+      functions: 100,
+      lines: 90,
+      statements: 90,
     },
   },
 };

@@ -83,7 +83,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::person.person",
-      "inversedBy": "ownedPodcasts"
+      "mappedBy": "ownedPodcasts"
     }
   }
 }

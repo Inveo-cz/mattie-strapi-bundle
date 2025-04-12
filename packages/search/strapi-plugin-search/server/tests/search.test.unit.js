@@ -22,6 +22,32 @@ describe('Search plugin', function () {
     });
   });
 
+  test('Search provider should iterate all types when rebuilding indices', async () => {
+    const pluginInstance = strapi.plugin('search').provider;
+
+    expect(pluginInstance).not.toBeNull();
+    expect(pluginInstance).toHaveProperty('clear');
+    expect(pluginInstance).toHaveProperty('createMany');
+
+    const spyClear = jest.spyOn(pluginInstance, 'clear').mockImplementation(jest.fn());
+    const spyCreateMany = jest.spyOn(pluginInstance, 'createMany').mockImplementation(jest.fn());
+
+    await strapi
+      .plugin('search')
+      .service('provider')
+      .rebuild();
+
+    expect(spyClear).toHaveBeenCalledTimes(3);
+    expect(spyClear).toHaveBeenNthCalledWith(1, { indexName: 'running-tests_podcast' });
+    expect(spyClear).toHaveBeenNthCalledWith(2, { indexName: 'running-tests_episode' });
+    expect(spyClear).toHaveBeenNthCalledWith(3, { indexName: 'running-tests_api::category.category' });
+
+    expect(spyCreateMany).toHaveBeenCalledTimes(3);
+    expect(spyCreateMany).toHaveBeenNthCalledWith(1, expect.objectContaining({ indexName: 'running-tests_podcast' }));
+    expect(spyCreateMany).toHaveBeenNthCalledWith(2, expect.objectContaining({ indexName: 'running-tests_episode' }));
+    expect(spyCreateMany).toHaveBeenNthCalledWith(3, expect.objectContaining({ indexName: 'running-tests_api::category.category' }));
+  });
+
   test('Search provider should not be initialized', async () => {
     return await strapi
       .plugin('search')
