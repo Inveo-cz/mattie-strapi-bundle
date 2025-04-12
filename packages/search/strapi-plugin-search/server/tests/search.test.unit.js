@@ -32,10 +32,7 @@ describe('Search plugin', function () {
     const spyClear = jest.spyOn(pluginInstance, 'clear').mockImplementation(jest.fn());
     const spyCreateMany = jest.spyOn(pluginInstance, 'createMany').mockImplementation(jest.fn());
 
-    await strapi
-      .plugin('search')
-      .service('provider')
-      .rebuild();
+    await strapi.plugin('search').service('provider').rebuild();
 
     expect(spyClear).toHaveBeenCalledTimes(3);
     expect(spyClear).toHaveBeenNthCalledWith(1, { indexName: 'running-tests_podcast' });
