@@ -14,11 +14,10 @@
     "@strapi/plugin-i18n": "4.25.20",
     "@strapi/plugin-users-permissions": "4.25.20",
     "@strapi/strapi": "4.25.20",
-    "better-sqlite3": "^11.9.1",
+    "better-sqlite3": "11.9.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
-    "sqlite3": "5.1.7",
     "styled-components": "5.3.3"
   },
   "author": {
