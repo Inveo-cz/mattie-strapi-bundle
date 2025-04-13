@@ -1,6 +1,15 @@
+[![mattie-strapi-bundle](./docs/static/logo.svg)](https://mattie-bundle.mattiebelt.com/)
+
 A modified version of [Mattie Belt's Strapi search plugin](https://mattie-bundle.mattiebelt.com/) that adds reindexing functionality and respect for publication state.
 
+Also updated to support latest Strapi 4.x and Node.js 20.x versions.
+
 # mattie-strapi-bundle
+
+[![Tests](https://github.com/Inveo-cz/mattie-strapi-bundle/actions/workflows/tests.yml/badge.svg)](https://github.com/Inveo-cz/mattie-strapi-bundle/actions)
+[![Codecov](https://img.shields.io/codecov/c/github/Inveo-cz/mattie-strapi-bundle?style=flat-square)](https://codecov.io/gh/Inveo-cz/mattie-strapi-bundle)
+[![Strapi](https://img.shields.io/npm/dependency-version/@inveo.cz/mattie-strapi-bundle-example/@strapi/strapi)](https://github.com/strapi/strapi)
+[![License](https://img.shields.io/github/license/Inveo-cz/mattie-strapi-bundle?style=flat-square)](./LICENSE)
 
 This bundle brings extra easy-to-use features to the Strapi eco-system.
 
@@ -32,8 +41,6 @@ yarn setup
 ```batch
 yarn develop
 ```
-
-The `DATABASE` ENV can be used to choose another [database config](example/config/database.js).
 
 ### Format & lint
 
