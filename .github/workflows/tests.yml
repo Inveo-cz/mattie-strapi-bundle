@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [12, 14, 16]
+        node: [20]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -40,6 +40,8 @@ jobs:
       - name: Run unit tests
         run: yarn -s test
         env:
+          JWT_SECRET: abc123
+          API_TOKEN_SALT: salt123
           DATABASE: sqlite
           DATABASE_FILE: .tmp/test.db
           DEBUG: true

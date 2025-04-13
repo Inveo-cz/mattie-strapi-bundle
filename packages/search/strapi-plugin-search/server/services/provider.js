@@ -6,13 +6,11 @@ const { sanitize } = require('../utils/sanitize');
 
 /**
  * Gets provider service
- *
  * @returns {object} Provider service
  */
 module.exports = () => ({
   /**
    * Loads provider
-   *
    * @param {object} pluginConfig - Plugin configuration
    * @param {string} [pluginConfig.provider] - Provider name
    * @param {object} [pluginConfig.instance] - Provider instance
@@ -25,7 +23,7 @@ module.exports = () => ({
       // Todo implement v4 package loader logic
       const providerInstance = pluginConfig.instance
         ? pluginConfig.instance
-        : await require(`@mattie-bundle/strapi-provider-search-${pluginConfig.provider}`).init(pluginConfig);
+        : await require(`@inveo.cz/strapi-provider-search-${pluginConfig.provider}`).init(pluginConfig);
 
       if (validateProvider(providerInstance)) {
         PROVIDER_METHODS.forEach((method) => {
@@ -41,7 +39,6 @@ module.exports = () => ({
 
   /**
    * Clears and then re-populates search indexes by calling findMany on the content type
-   *
    * @param {Array<string>} specificTypes - The type names to re-populate the indexes for; if null, re-populates all types; if empty, re-populates no types
    * @param {object} parameters - Parameters to pass to findMany
    */

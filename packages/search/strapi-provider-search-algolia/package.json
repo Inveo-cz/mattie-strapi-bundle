@@ -1,5 +1,5 @@
 {
-  "name": "@richardweaver/strapi-provider-search-algolia",
+  "name": "@inveo.cz/strapi-provider-search-algolia",
   "version": "1.0.0-alpha.3",
   "description": "Algolia provider for strapi search plugin",
   "strapi": {
@@ -13,7 +13,7 @@
     "algoliasearch": "^4.9.1"
   },
   "peerDependencies": {
-    "@richardweaver/strapi-plugin-search": "^1.0.0-alpha.2"
+    "@inveo.cz/strapi-plugin-search": "^1.0.0-alpha.3"
   },
   "keywords": [
     "algolia",
@@ -22,13 +22,13 @@
     "search",
     "provider"
   ],
-  "homepage": "https://github.com/richardweaver/mattie-strapi-bundle",
+  "homepage": "https://github.com/inveo-cz/mattie-strapi-bundle",
   "repository": {
     "type": "git",
-    "url": "github:richardweaver/mattie-strapi-bundle",
+    "url": "github:inveo-cz/mattie-strapi-bundle",
     "directory": "packages/search/strapi-provider-search-algolia"
   },
-  "bugs": "https://github.com/richardweaver/mattie-strapi-bundle/issues",
+  "bugs": "https://github.com/inveo-cz/mattie-strapi-bundle/issues",
   "author": {
     "name": "Mattias Belt, van den",
     "email": "mattiebelt@gmail.com",
@@ -38,10 +38,14 @@
     {
       "name": "Richard Weaver",
       "url": "https://github.com/richardweaver"
+    },
+    {
+      "name": "Inveo.cz",
+      "url": "https://github.com/inveo-cz"
     }
   ],
   "engines": {
-    "node": ">=12.x.x <=18.x.x",
+    "node": ">=12.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "SEE LICENSE IN LICENSE"

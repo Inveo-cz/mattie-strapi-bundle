@@ -1,5 +1,5 @@
 {
-  "name": "@richardweaver/mattie-strapi-bundle-example",
+  "name": "@inveo.cz/mattie-strapi-bundle-example",
   "version": "1.0.0-alpha.3",
   "description": "A Strapi example application for the mattie-strapi-bundle",
   "scripts": {
@@ -9,12 +9,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@richardweaver/strapi-plugin-search": "^1.0.0-alpha.3",
-    "@richardweaver/strapi-provider-search-algolia": "^1.0.0-alpha.3",
-    "@strapi/plugin-i18n": "4.0.6",
-    "@strapi/plugin-users-permissions": "4.0.6",
-    "@strapi/strapi": "4.0.6",
-    "sqlite3": "5.0.2"
+    "@inveo.cz/strapi-plugin-search": "^1.0.0-alpha.3",
+    "@inveo.cz/strapi-provider-search-algolia": "^1.0.0-alpha.3",
+    "@strapi/plugin-i18n": "4.25.20",
+    "@strapi/plugin-users-permissions": "4.25.20",
+    "@strapi/strapi": "4.25.20",
+    "better-sqlite3": "11.9.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
   },
   "author": {
     "name": "Mattias van den Belt",
@@ -25,13 +29,17 @@
     {
       "name": "Richard Weaver",
       "url": "https://github.com/richardweaver"
+    },
+    {
+      "name": "Inveo.cz",
+      "url": "https://github.com/inveo-cz"
     }
   ],
   "strapi": {
     "uuid": "5a3ccf76-918e-430e-93ea-eedce04e058d"
   },
   "engines": {
-    "node": ">=12.x.x <=18.x.x",
+    "node": ">=12.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "SEE LICENSE IN LICENSE"

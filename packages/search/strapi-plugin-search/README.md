@@ -16,7 +16,7 @@ This fork also does not index content items when the draft system is enabled and
 
 ## Other packages ✨
 
-- [Algolia Search Provider](https://github.com/richardweaver/mattie-strapi-bundle)
+- [Algolia Search Provider](https://github.com/inveo-cz/mattie-strapi-bundle)
 
 ## License
 

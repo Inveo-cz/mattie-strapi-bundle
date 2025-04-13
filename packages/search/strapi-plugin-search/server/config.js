@@ -14,7 +14,6 @@ module.exports = {
 
   /**
    * Validates plugin configuration
-   *
    * @param {object} config - Plugin configuration
    * @returns {object} Configuration validator
    */

@@ -5,7 +5,6 @@ const { sanitize } = require('../utils/sanitize');
 
 /**
  * Gets lifecycle service
- *
  * @returns {object} Lifecycle service
  */
 module.exports = () => ({

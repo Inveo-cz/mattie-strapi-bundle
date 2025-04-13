@@ -32,10 +32,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["files", "videos"]
     },
     "duration": {
       "type": "time",
@@ -43,10 +40,7 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "FULL",
-        "TRAILER"
-      ],
+      "enum": ["FULL", "TRAILER"],
       "default": "FULL"
     },
     "keywords": {
@@ -62,7 +56,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::person.person",
-      "inversedBy": "hostedEpisodes"
+      "mappedBy": "hostedEpisodes"
     },
     "guests": {
       "type": "relation",

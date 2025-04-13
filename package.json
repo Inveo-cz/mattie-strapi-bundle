@@ -10,35 +10,35 @@
   "scripts": {
     "setup": "yarn && yarn lerna bootstrap",
     "build": "lerna run --stream build",
-    "develop": "ENV_PATH=../.env yarn --cwd example develop",
-    "console": "ENV_PATH=../.env yarn --cwd example strapi console",
-    "start": "ENV_PATH=../.env yarn --cwd example start",
+    "develop": "cross-env ENV_PATH=../.env yarn --cwd example develop",
+    "console": "cross-env ENV_PATH=../.env yarn --cwd example strapi console",
+    "start": "cross-env ENV_PATH=../.env yarn --cwd example start",
     "lint": "eslint . --fix",
     "format": "npm-run-all -p format:*",
     "format:code": "yarn prettier \"**/*.js\" --write",
     "format:other": "yarn prettier \"**/*.{md,css,scss,yaml,yml}\" --write",
-    "test": "NODE_ENV=testing yarn test:unit",
+    "test": "cross-env NODE_ENV=testing yarn test:unit",
     "test:unit": "jest --forceExit"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/eslint-parser": "^7.15.0",
-    "@strapi/strapi": "4.0.6",
-    "eslint": "^8.6.0",
+    "@strapi/strapi": "4.25.20",
+    "cross-env": "^7.0.3",
+    "eslint": "8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsdoc": "^37.5.1",
+    "eslint-plugin-jsdoc": "50.6.8",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-redux-saga": "^1.3.2",
     "jest": "^27.4.7",
     "lerna": "^4.0.0",
     "lint-staged": "^12.1.5",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.5.1",
+    "prettier": "3.5.3",
     "supertest": "^6.1.3"
   },
   "author": {
@@ -50,11 +50,15 @@
     {
       "name": "Richard Weaver",
       "url": "https://github.com/richardweaver"
+    },
+    {
+      "name": "Inveo.cz",
+      "url": "https://github.com/inveo-cz"
     }
   ],
-  "homepage": "https://github.com/richardweaver/mattie-strapi-bundle",
-  "repository": "github:richardweaver/mattie-strapi-bundle",
-  "bugs": "https://github.com/richardweaver/mattie-strapi-bundle/issues",
+  "homepage": "https://github.com/inveo-cz/mattie-strapi-bundle",
+  "repository": "github:inveo-cz/mattie-strapi-bundle",
+  "bugs": "https://github.com/inveo-cz/mattie-strapi-bundle/issues",
   "lint-staged": {
     "*.{js,md,css,scss,yaml,yml}": [
       "prettier --write"
@@ -64,7 +68,7 @@
     ]
   },
   "engines": {
-    "node": ">=12.9.x <=18.x.x",
+    "node": ">=12.9.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "SEE LICENSE IN LICENSE"

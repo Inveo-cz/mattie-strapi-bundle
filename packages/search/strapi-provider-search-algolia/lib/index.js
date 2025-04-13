@@ -16,7 +16,6 @@ const algoliasearch = require('algoliasearch');
 module.exports = {
   /**
    * Initiates the algolia search provider
-   *
    * @param {object} pluginConfig - Plugin configuration
    * @returns {Provider} Algolia search provider
    */
@@ -39,14 +38,12 @@ module.exports = {
     return {
       /**
        * Algoliasearch Client
-       *
        * @type {algoliasearch.SearchClient};
        */
       client,
 
       /**
        * Creates the entity on a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @param {object} params.data - Data of the to be created entry
@@ -65,7 +62,6 @@ module.exports = {
 
       /**
        * Updates the entity on a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @param {object} params.data - Data of the to be updated entry
@@ -84,7 +80,6 @@ module.exports = {
 
       /**
        * Deletes the entity from a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @param {string} params.id - Id used for identification of the entry
@@ -102,7 +97,6 @@ module.exports = {
 
       /**
        * Creates multiple entities on a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @param {Array<{data: object, id: string|undefined}>} params.data - Data of the to be created entries
@@ -122,7 +116,6 @@ module.exports = {
 
       /**
        * Updates multiple entities on a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @param {Array<{data: object, id: string|undefined}>} params.data - Data of the to be updated entries
@@ -142,7 +135,6 @@ module.exports = {
 
       /**
        * Deletes multiple entities from a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @param {Array<string>} params.ids - Ids used for identification of the entries
@@ -160,7 +152,6 @@ module.exports = {
 
       /**
        * Clears all entities from a index
-       *
        * @param {object} params - Paramaters
        * @param {string} params.indexName - Name of the index
        * @returns {Promise<algoliasearch.ChunkedBatchResponse>} Promise with chunked task

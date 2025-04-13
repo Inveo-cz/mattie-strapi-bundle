@@ -6,7 +6,6 @@ const PROVIDER_METHODS = ['create', 'update', 'delete', 'createMany', 'updateMan
 
 /**
  * Validates plugin configuration
- *
  * @param {object} config - Plugin configuration
  */
 const validateConfig = (config) => {
@@ -36,7 +35,6 @@ const validateConfig = (config) => {
 // Todo: move function to provider service if function keeps simple.
 /**
  * Validates search provider
- *
  * @param {object} provider - Search Provider
  * @returns {boolean} - True
  */
